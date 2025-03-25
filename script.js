@@ -8,13 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Mobile Navigation
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector("nav ul");
 
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("open");
-    });
+
+    // Mobile Navigation
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("open");
+});
 
     // Form Submission
     document.querySelector(".contact-form").addEventListener("submit", function (e) {

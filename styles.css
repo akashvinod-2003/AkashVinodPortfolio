@@ -401,3 +401,12 @@ section h2 {
         margin-top: 0.5rem;
     }
 }
+/* Default state: hide the navigation menu */
+nav ul {
+    display: none;
+}
+
+/* When the 'open' class is added, show the navigation menu */
+nav ul.open {
+    display: block;
+}
