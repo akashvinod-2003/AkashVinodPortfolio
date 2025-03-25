@@ -33,7 +33,6 @@ header {
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
-
 header::before {
     content: '';
     position: absolute;
@@ -42,11 +41,11 @@ header::before {
     right: 0;
     bottom: 0;
     background: 
-        linear-gradient(45deg, rgba(233, 69, 96, 0.1), transparent),
+        linear-gradient(45deg, rgba(255, 69, 100, 0.1), transparent),
         linear-gradient(135deg, rgba(22, 33, 62, 0.2), transparent);
-    background-size: 400% 400%;
-    animation: gradient-move 15s ease infinite;
-    z-index: 1;
+    background-size: 100% 100%;
+    animation: gradient-move 5s ease infinite;
+    z-index: 10;
 }
 
 @keyframes gradient-move {
