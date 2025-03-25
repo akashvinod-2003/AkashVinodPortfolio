@@ -197,15 +197,10 @@ section h2 {
     transform: translateY(-3px);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .nav-links li {
-        margin: 0.75rem 0;
+@media (min-width: 769px) {
+    nav ul {
+        display: flex; /* Ensures the menu is visible on larger screens */
     }
 }
 
@@ -403,10 +398,28 @@ section h2 {
 }
 /* Default state: hide the navigation menu */
 nav ul {
-    display: none;
+    display: none !important;
 }
 
 /* When the 'open' class is added, show the navigation menu */
 nav ul.open {
-    display: block;
+    display: block !important;
+}
+
+footer 
+{
+    color:blanchedalmond;
+    text-align: center;
+
+}
+footer a
+{
+    font-size: 24px; /* Increases the size of icons */
+    margin: 0 10px;
+    color: #ff4f8b;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+footer p{
+    font-size: 15px;
 }
