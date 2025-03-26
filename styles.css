@@ -1,25 +1,24 @@
 :root {
-    /* Dynamic Color Palette */
-
-
-    --background-primary: #ffffff;
-    --background-secondary: #f8f9fa;
-    --accent-primary: #e0e0e0;
-    --accent-secondary: #c0c0c0;
-    --highlight-color: #fd4583;
+    /* Light Theme (Light Blue) */
+    --background-primary: #e3f2fd; /* Light Blue */
+    --background-secondary: #bbdefb; /* Lighter Blue */
+    --accent-primary: #90caf9; /* Soft Blue */
+    --accent-secondary: #64b5f6; /* Medium Blue */
+    --highlight-color: #1976d2; /* Dark Blue */
     --text-primary: #0f1020;
     --text-secondary: #333333;
 }
-[data-theme="dark"] {
-    --background-primary: #0f1020;
-    --background-secondary: #1a1a2e;
-    --accent-primary: #16213e;
-    --accent-secondary: #0f3460;
-    --highlight-color: #e94560;
-    --text-primary: #ffffff;
-    --text-secondary: #e0e0e0;
-}
 
+[data-theme="dark"] {
+    /* Dark Theme (Deep Blue) */
+    --background-primary: #0a192f; /* Deep Navy Blue */
+    --background-secondary: #112240; /* Darker Blue */
+    --accent-primary: #233554; /* Dark Slate Blue */
+    --accent-secondary: #3f72af; /* Muted Blue */
+    --highlight-color: #008aff; /* Vibrant Blue */
+    --text-primary: #e3f2fd; /* Light Blue for contrast */
+    --text-secondary: #bbdefb; /* Soft Blue */
+}
 * {
     margin: 0;
     padding: 0;
@@ -467,20 +466,7 @@ footer p{
     }
 
 
-    */
-[data-theme="dark"] {
-    --background-primary: #0f1020;
-    --background-secondary: #1a1a2e;
-    --accent-primary: #16213e;
-    --accent-secondary: #0f3460;
-    --highlight-color: #e94560;
-    --text-primary: #ffffff;
-    --text-secondary: #e0e0e0;
-}
-[data-theme="light"] body {
-    background-color: var(--background-primary);
-    color: var(--text-primary);
-}
+
 .theme-toggle-btn {
     position: fixed;
     top: 20px;
