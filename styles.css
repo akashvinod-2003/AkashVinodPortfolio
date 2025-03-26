@@ -486,7 +486,7 @@ footer p{
     top: 20px;
     right: 20px;
     background: var(--accent-secondary);
-
+    z-index: 101;
 
     border-radius: 50%;
     cursor: pointer;
