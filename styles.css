@@ -449,3 +449,8 @@ footer p{
     }
 
 }
+
+    /* Hide <br> on larger screens */
+    @media (min-width: 768px) { 
+        .mobile-only { display: none; }
+    }
