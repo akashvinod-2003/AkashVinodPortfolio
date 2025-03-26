@@ -39,3 +39,25 @@ menuToggle.addEventListener("click", function () {
         this.reset();
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggle = document.getElementById("theme-toggle");
+    const root = document.documentElement;
+
+    // Check saved theme in localStorage, default to light
+    let currentTheme = localStorage.getItem("theme") || "light";
+    root.setAttribute("data-theme", currentTheme);
+    updateButtonIcon(currentTheme);
+
+    themeToggle.addEventListener("click", () => {
+        // Toggle between light and dark mode
+        currentTheme = currentTheme === "light" ? "dark" : "light";
+        root.setAttribute("data-theme", currentTheme);
+        localStorage.setItem("theme", currentTheme);
+        updateButtonIcon(currentTheme);
+    });
+
+    function updateButtonIcon(theme) {
+        themeToggle.textContent = theme === "light" ? "🌞" : "🌙";
+    }
+});
